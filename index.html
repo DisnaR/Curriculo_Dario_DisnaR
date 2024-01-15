@@ -53,7 +53,16 @@
                                 <img src="./Imagens/Linkedin.png" alt="LinkedIn"/>
                             </a>
                         </li>
-                        
+                        <li>
+                            <a href="https://github.com/DisnaR?tab=repositories" title="GitHub">
+                                <img src="./Imagens/GitHub-Logo.png" alt="GitHub"/>
+                            </a>
+                        </li>
+                        <li id="imgvercel">
+                            <a href="https://vercel.com/disnars-projects" title="Vercel">
+                                <img src="./Imagens/vercel.svg" alt="GitHub"/>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -73,13 +82,21 @@
                     </div>
                     <div>
                         <h3><strong>Entre em Contato:</strong></h3>
-                        <form>
-                            <input type="text" placeholder="Seu nome" required/>
-                            <input type="email" placeholder="Seu e-mail" required/>
-                            <input type="tel" placeholder="Seu telefone (opcional)"/>
-                            <textarea placeholder="Sua mensagem" required></textarea>
-                            <button type="submit"> Enviar </button>
-                        </form>
+                        <form id="myForm" action="https://formspree.io/f/moqgvnrr" method="POST">
+                            <label for="name">Seu nome:</label>
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome" required/>
+                        
+                            <label for="email">Seu e-mail:</label>
+                            <input type="email" id="email" name="_replyto" placeholder="Digite seu e-mail" required/>
+                        
+                            <label for="phone">Seu telefone (opcional):</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone"/>
+                        
+                            <label for="message">Sua mensagem:</label>
+                            <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+                        
+                            <button type="submit">Enviar</button>
+                        </form>                   
                     </div>
                     <div>
                         <div>

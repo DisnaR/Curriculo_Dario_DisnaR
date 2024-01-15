@@ -48,13 +48,24 @@ section .container {
     justify-content: space-between;
 }
 
+.brands-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .brands-list img {
     height: 60px;
+    vertical-align: middle;
 }
 
 .brands-list li {
-    display: inline;
+    display: inline-block;
     margin-right: 8px;
+}
+
+#imgvercel img {
+    height: 100px; /* Ajuste o tamanho conforme necessário */
 }
 
 section .container {
@@ -151,4 +162,31 @@ footer {
     color: #ecf0f1;
     padding: 16px 0;
     text-align: center; /* Centralizar o texto */
+}
+
+/* Estilos para o formulário Formspree */
+#myForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+}
+
+#myForm input,
+#myForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+#myForm button {
+    background-color: #808185;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#myForm button:hover {
+    background-color: #314e9e;
 }
